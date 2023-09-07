@@ -1,0 +1,75 @@
+version: '3'
+services:
+  pagos-1:
+    build: ./pagos-api-1
+    ports:
+      - "5001:5000"
+    depends_on:
+      - mockserver
+  
+  pagos-2:
+    build: ./pagos-api-2
+    ports:
+      - "5002:5000"
+    depends_on:
+      - mockserver
+      
+  pagos-backup:
+    build: ./pagos-api-backup
+    ports:
+      - "5003:5000"
+      
+  candidatos:
+    build: ./candidatos
+    ports:
+      - "5004:5000"
+    depends_on:
+      - mockserver
+      
+  monitor:
+    build: ./monitor
+    depends_on:
+      - pagos-1
+      - pagos-2
+      - notificador
+      - rabbit
+      
+  notificador:
+    build: ./notificador
+    ports:
+      - "5005:5000"
+    depends_on:
+      - rabbit
+      
+  mockserver:
+    build: ./mocks
+    ports:
+      - "9999:8080"
+  
+  haproxy:
+    image: haproxy:latest
+    container_name: haproxy
+    ports:
+      - "8000:80"
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    entrypoint: ["haproxy", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
+    depends_on:
+      - pagos-1
+      - pagos-2
+      - pagos-backup
+      - monitor
+      - notificador
+      
+  rabbit:
+    image: rabbitmq:3.7.5-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+      - "4369:4369"
+      - "5671:5671"
+    command: sh -c "rabbitmq-plugins enable rabbitmq_management;  echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config; rabbitmq-server"
+
+
+
+
