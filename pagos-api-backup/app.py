@@ -2,11 +2,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def pagoNomina():
+@app.route('/pagar-nomina', methods=['POST'])
+def pagarNomina():
     return 'Pago hecho desde instancia pagos-backup!', 200
     
-@app.route('/health')
+@app.route('/healthcheck')
 def healthcheck():
     return 'OK', 200
 

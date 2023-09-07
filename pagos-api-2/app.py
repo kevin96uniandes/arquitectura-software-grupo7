@@ -3,11 +3,11 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/')
-def pagoNomina():
+@app.route('/pagar-nomina', methods=['POST'])
+def pagarNomina():
     return 'Pago hecho desde instancia pagos-2!', 200
     
-@app.route('/health')
+@app.route('/healthcheck')
 def healthcheck():
     response = requests.get("http://mockserver:8080/mock2/health")
     return '', response.status_code
