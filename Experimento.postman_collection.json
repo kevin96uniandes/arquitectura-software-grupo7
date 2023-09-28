@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "b48546e5-5dcd-407b-8230-9f7120619d38",
+		"name": "Experimento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17945686"
+	},
+	"item": [
+		{
+			"name": "Administrador - Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encData\": \"35d3e693117940502888e0fdee60a5cd7b0368603c2f4a158d3393e332759d19bdbb8abc89a63c0ba7d240a2ec84638a3be0cb4119cde7258828da5262eb6091f7b9af1bbdafffca6ce9f95a8fedc2810379b7541efa01262f8a7fa278479862eb093a50b109cc4a456d003ac39e4d7a55d1dac633331468f30a258b404daa57e64e805f0faac69d6d9c532b4d84ef3040210854a4db72d7ec166e37632ce367ef6f3afee78d1bb5a8d0b1caf25622666f7feccebc8e7f12608fcca83a40fdaf135ebb3cd3800be6e901aa806fc5de8b48470942d86486869d78d0f14e7c753c72c9b33aed053fb2b2e85c62004d015b7f40d787a50ddf2a1036229063084daeff6bf46b5af886fca1e7253521044dda67416a91ccf6ebdfba018f811ad484be0dda68956b8bfa05ba632ea8a5e2f9b1f1e395cc301819b641f0c45c59456aba9204f47f1c6dbbab4f2b9f9c475cf9f984e4c3908863eea4c1bf03f465aba59ddbe657150192be7cecf68c3475713352daa34c7435fcece8a1579d7a282604eebc74b024ff0fbe175c2cede8efb1ad3d4e35ab2abbce6347244ac46fb6b96a3c1a5ebfc0cd31c4fe45bc7721feea2ad0ac0a79f1f8d69328d1ac1f88000d040284e3957a81a695fa5880a18bb286c65666db19b86b2ba22544cb85d6875ef20be0cbb0b5d5fb7896e9af35db3ada597558587c080d5ecb5f9b9182f4e881d307\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidato - Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encData\": \"764f28ee44d94049a5b637ef228b2d9782506821e32045218605cff352637dab444166d748aff275708735c03b2534e52cd93052fd6968d4cdea18dea087c9d2ac58248312fe1f9f85395d9b009c2814761916d135229c507571142e4f3667bec42dd16a4bd1bab97dbd36e49a2511eb7078239f4d35b11f31e5cf9dbd60997d8e823d5583983332cb3211640bc4205384fe274309bf5f1d27ee4b10f8000675148f6fc216bdf99e4374572d6418279862389ca8236763eb3a08e7eb41bab508a0f80526451b24f6786d19e186e1f7e7091b70beac8c13afde14cc94523e821497bfb8e2a7d0cb747c67d3cc2d16960b293990dec223ef07d37c652e39ae0073677c497dabd793ec30610559ea643e466429b800c8e8d8f760d98e1d214847aeb830862f53e1ea44769740265e0b24f583a262c75e1017f51f7c90ad3db96997f4a9d346cfa3163992ac0975c2b79bd0e71437ba0fcd7ef70dab476f65ad943b50e7cb9faa217ae887ff778b570aa735812d09229a7e415e7b6995dad5c56fcc93f57c0ff04951f056b75ec8f6da10752fad4cc894e6c8d3c206c85742cf0f579d4a56d5f790d22b4fc6315902e2da427fd98bb01bd61875846cd3d553c7e0e5cd45fce75f883320e5214206ce0a7b661068bc84f327a689e02f4e6a2177c1f43e16c6cf4e6eaf73d6f4ca1c7758fe42bb9cc055c06529a87068f62db4c7fbf7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Administrador - Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encData\": \"36afd8aea059b228f6ec07b781544d2ddc5d65f75a0d9e09fa12eae3f6d6bae2249a32ae4e07e3bb9015b853fe59e8e658297c1bc2bea6271fc6151f2961046e264997fb2719ef9c16d5080dd61f3fe3199fb63beecca20b81e054f5e0fe232cff80fd0efe421dd93d09a0e632891986b4f94e3ec0734caaf0cf56cbf9da87cbf2b3676c7ca56f02da8313dd4323cdca27b1b35f4acee7f264d9f9a5fd516b4e587caa2b1c9fcda7fffe778b66963ce606a2c1cadba40c8cd444f1ef62653af2e1e19c777943b640fc4ace4c7d2513c634cded32fdd05bcec52e9ebd99a06ed6b947fe285747d135a53a456c486d165a6f3c10b4dfaf21981491eb7fbfd18b542cf68cc1ac5a0e71e8f56bc36406584ba0d786772c59ea1c5d3710ae8deb0fc009bea5c2bc1d4dfb0a2fa3f186d0fc294ad28e7c4f5d7b11f5940d8c00ba0b4ede5b59987813a61bd2011e22a8daaba8bbfc70a8f386afde8a2bf2e3c34b9bf4363d4a40f3c33fe671f2944b58a3b22157f1fcf1c071a6c66dad6ecbe2fd4f8d9d4e7f4857f6a5ab71f2da9d2976c6e67fc8639f8cdf4e3ed42d9ae87b8a2e3c003f81558352c173494acb44cca83fddcbad6bc8efff984e0c75c8a5049091e607a1e90a3cf03299f589edc091f3cf7020a81fef22a3f7faa7fc2227bd5bc8702a86a6c73bbcd92d61f0ebaab8913a7005b2e37dd076a1d7a2c3d2b7308d1ea8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidato - Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encData\": \"855fd5ee2bc42bee213faa5b5d0aa955a6e7b2a370609faad99e212e2d49db4d4faa68b8f20957aa9994065d83df7a813d7512aa2069176afb1436c1415b30a3786c5ea9df8ad8e9c55e784da561fa9dd8a5f4941c98f949dfc114a12026b7ee48a5b403ac1d58736155233e1d54141ba53d01f87c3bc82953748b4b1a8487b3f2c02a045eb74dfb533d110ac191256045e5d54dbae4392c8ffbf39e017c714f88510ba08913e16c610c819951babf00e8338bdde833f53b429563e14a71eb24251fe3503e9c81aa7642ef4eb9d6b5a4a02b65caa155acbf64f3a51428e427cf50a8fe5dbbd35cd4d92829945931a77c632b0460364aa4e5b05308fffb66f6ce93912f73d8bf652633cb90692d2b1c91a1c77829a4c94d0c90e87ab6a89aac8baf3ba58af0362fdd997e0cea459c82ec1ae2d9675a879b72bf1b4b541a2d1b64133afb263a0f71e6615207285b3122d7206f4f8d09513bd21ce1e5660db5fc14fbf02131aa5f26814ece3177a67d8c58b61f91e6d7226bc1be8868d9b2ccd804ad959405562bae6fec43e2f9df70ba5bb9a562574257100761204b49b7b010e99c679f60382c59fb9b1219356f8f755ed973f246d508f6354f401e7c451bca30c789d05c7bdc24e3e53dec8c96a5e9638ae58fb8d59cd256f10d1c7fc09bff28677c929e85f2e626cbeac59ba00ab359eea95a9232b5f4e40d892f805a3ac74f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidato - Apply to job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5NTE4NDg0OCwianRpIjoiYjYyNWI0MmItZWYzZC00YmViLWE3NzEtMmU2MWFhODQxMzFmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNhbmRpZGF0byIsIm5iZiI6MTY5NTE4NDg0OCwiZXhwIjoxNjk1MTg1NzQ4LCJyb2xlIjoiQ2FuZGlkYXRvIn0.451LAaVXdoC9HfrvGKaHZ_wc903_Q2dZb27YwN1wLR0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/apply-to-job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"apply-to-job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Administrador - Apply to job",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5NTE4NDkzNywianRpIjoiNTJhZWU2YWUtZjIxZC00M2YzLWI0MTktNTc0MDdjNmJiMDA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE2OTUxODQ5MzcsImV4cCI6MTY5NTE4NTgzNywicm9sZSI6IkFkbWluaXN0cmFkb3IifQ.nl3CBrHdHzzg8RJ3LGRb-1CtLZAazEeCjLIgB36Sses",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/apply-to-job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"apply-to-job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"administrador\",\r\n    \"password\": \"HolaMundo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/encrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encData\": \"24bffa67c6951f2d28aac4050de9112c27fc9440fdf2afabc671c61b93a24c8d7b31abf7bfb785f00d70dbad5428d14e02393810c2beebdcb8c2c0f38107c874ee6d9e33195af681c6b0420aa7a08674df32ddbde3a06cb1d02bdc365fae85d51b4ed7dbf1420b308c0a79746188a99ae613bb31ac3fd700c3ac7d99932bd0c7703ec55e98f13cd4898d1e616219d49408eb2bf0379eca633b632a697020a418bfac0701162fff76cfba1accc553990a1d5412d9a978e464e0e00982437d7449d2293a7637ab1eeea314d815ee11ec42e9accb0492252496e891b323ade284a568df8d8baa50e5a82bffffc75ad045c0a9728e9fd6a2187e8e470b9d473b36d7dc9b8f07f08dbf4306d6afb30a0f60e38ee3800904073caed2a8a50b89269435194386cf0b2d5bb76c926dfcd9bd13d2a7ae810231078e794791011d4764214fa2158bfcc9bbf3133a8f08fc6a10f4369fd6ea9986884f04bf7d110a84c643a276e5455a75b52ca748d51b62a1d1382b388699f68cfb96918599c88ac6b98ada684bdb577837b261a3370b3deea2008cff0b932163ba39029f34e0ac21d6d63bd25845861550fbbfa4c25855c6dc74b569577c0103174e03a92206eae84fc335b10c9f4ea12166455a66f53570314d6592f2d2d3311fad3f26c5b98366ca13a56331e1f3311367beee94028ae288160a33fdbdcf7cd559a4bda21f9a4b153099\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
