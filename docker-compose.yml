@@ -1,0 +1,25 @@
+version: '3'
+services:
+  registro-y-autenticacion:
+    build: ./registro-y-autenticación
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./db:/db
+  candidatos:
+    build: ./candidatos
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./db:/db
+  util:
+    build: ./util
+    ports:
+      - "5002:5000"
+    volumes:
+      - ./db:/db
+      
+  
+
+
+
